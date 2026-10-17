@@ -1,0 +1,5 @@
+.streamlit/secrets.toml
+saathi.db
+__pycache__/
+*.pyc
+.env
