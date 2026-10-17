@@ -5,45 +5,8 @@ from google import genai
 from google.genai import types
 
 st.set_page_config(page_title="Saathi", page_icon="🤝")
-
-
-CSS = "".join([
-    "<style>",
-    "#MainMenu, footer {visibility: hidden;}",
-    ".stApp {background: linear-gradient(180deg,#f3f0ff 0%,#fff5f8 50%,#eefcf7 100%);}",
-    ".block-container {padding-top: 1.2rem; max-width: 820px;}",
-    ".hero {background: linear-gradient(135deg,#6a11cb 0%,#2575fc 50%,#00c9a7 100%);",
-    "border-radius: 22px; padding: 26px 28px; color: #fff; margin-bottom: 16px;",
-    "box-shadow: 0 12px 30px rgba(106,17,203,.30);}",
-    ".hero h1 {margin: 0; font-size: 2.2rem; color: #fff;}",
-    ".hero p {margin: 6px 0 12px 0; font-size: 1.02rem; color: #fff; opacity: .95;}",
-    ".chip {display: inline-block; background: rgba(255,255,255,.22); border-radius: 999px;",
-    "padding: 4px 12px; margin: 0 6px 6px 0; font-size: .82rem; font-weight: 600; color: #fff;}",
-    "[data-testid='stMetric'] {background: #fff; border-radius: 14px; padding: 14px 16px;",
-    "border-left: 6px solid #6a11cb; box-shadow: 0 4px 14px rgba(0,0,0,.08);}",
-    ".stTabs [data-baseweb='tab-list'] {gap: 6px;}",
-    ".stTabs [data-baseweb='tab'] {background: #ffffff; border-radius: 12px; padding: 8px 14px;",
-    "box-shadow: 0 2px 8px rgba(0,0,0,.06);}",
-    ".stTabs [aria-selected='true'] {background: linear-gradient(135deg,#6a11cb,#2575fc) !important;",
-    "color: #fff !important;}",
-    ".stButton > button, .stFormSubmitButton > button {border-radius: 12px; font-weight: 700;",
-    "border: none; color: #fff; background: linear-gradient(135deg,#ff6a88,#ff9a44);}",
-    ".stButton > button:hover, .stFormSubmitButton > button:hover {filter: brightness(1.08); color: #fff;}",
-    "[data-testid='stSidebar'] {background: linear-gradient(180deg,#ede7ff,#e3f6ff);}",
-    "</style>",
-])
-st.markdown(CSS, unsafe_allow_html=True)
-
-HERO = (
-    "<div class='hero'>"
-    "<h1>🤝 Saathi</h1>"
-    "<p>Gig workers ka apna saathi: kamai, suraksha, haq aur shikayat</p>"
-    "<span class='chip'>🌐 8 Languages</span>"
-    "<span class='chip'>✨ Powered by Gemini</span>"
-    "<span class='chip'>🛠 5 Smart Tools</span>"
-    "</div>"
-)
-st.markdown(HERO, unsafe_allow_html=True)
+st.title("🤝 Saathi")
+st.caption("Gig workers ka apna saathi: kamai, suraksha, haq aur shikayat")
 
 try:
     API_KEY = str(st.secrets["GEMINI_API_KEY"]).strip()
