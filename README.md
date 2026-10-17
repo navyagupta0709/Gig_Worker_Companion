@@ -4,8 +4,6 @@ A GenAI-powered assistant for gig and informal workers in India
 (delivery partners, drivers, daily-wage workers). Built for the
 **Google for Developers PromptWars: Warm-up Challenge**.
 
-**Live demo:** YOUR-LIVE-LINK
-
 ## Problem
 Gig workers often struggle to track earnings, know their rights,
 find welfare schemes, understand documents, and write complaints,
