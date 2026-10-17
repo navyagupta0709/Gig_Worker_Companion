@@ -15,7 +15,7 @@ except Exception:
     st.stop()
 
 client = genai.Client(api_key=API_KEY)
-MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
+MODELS = ["gemini-3.8-flash", "gemini-flash-latest"]
 
 lang = st.sidebar.selectbox("🌐 Bhasha", ["Hinglish", "Hindi", "English", "Marathi", "Tamil", "Telugu", "Bengali", "Kannada"])
 
